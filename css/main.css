@@ -51,118 +51,163 @@
 
 
 html {
-        font-size: 1.25rem;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .wrapper {
-        width: 80%;
-    }
-    
-    @media only screen and (min-width:768px) {
-        
-        
-        html {
-            font-size: 1.15rem;
-        }
-    }
-    
-    @media only screen and (min-width:1170px) {
-        html {
-                font-size: 1.5rem;
-        }
-
-    }
-
-/*--------------------------------------------------------------
-4.0 - ELEMENTS 
--------------------------------------------------------------- */
-
-/* -- LISTS -- */
-
-li {
-        list-style: none;
-        display: inline-block;
-        padding-right: .5em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8rem;
 }
 
-@media only screen and (min-width:768px) {
-        ul {
-            margin-top: 3em;
-        }
-    }
-    
-
-
-/* -- TYPOGRAPHY -- */
-
-/* -- HEADINGS -- */
-
-h1, h4 {
-	font: 400 1rem 'Pacifico', cursive;
-	margin: 0;
+#meet-brandi p {
+		font-size: 2rem;
+        font-weight: 100;
 }
 
-h2 {
-	color: #0eb493;
-	font-weight: 800;
-	font-size: 1rem;
-        letter-spacing: -0.05em;
-	text-transform: uppercase;
-}
-
-h2, #meet-brandi {
+#meet-brandi {
+        padding: 18em 0 12em;
         text-align: center;
 }
 
+span, h2{
+	color: #0eb493;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+}
+
+#works p, h2 {
+        text-align: center;
+
+}
+
 h3 {
+	font-size: 1.1rem;
 	color: #062033;
-	font-size: 1rem;
-	margin-top: 3em;
-}
-
-#works h2 {
-        margin-top: 4em;
 }
 
 
-
-/*-- PARAGRAPHS --*/
-
-#meet-brandi {
-        margin-top: 9em;
+h1 {
+	margin-top: 0;
 }
 
-#works p {
-	color: rgba(6,32,51,0.8);
-	font-size: .7rem;
-	font-weight: 600;
-	line-height: 1.5em;
-        margin: 2em auto 5em;
-        width: 400px;
-}
-
-#features p {
-        font-size: .7rem;
-}
-
-footer p {
-	font-size: 0.4rem;
-        line-height: 1.5em;
-        width: 200px;
-}
-
-#meet-brandi p:first-child span {
-        color: #1ea78d;
-}
-
-#brandi-logo > p {
-        display: inline-block;
+h3 {
+	margin-bottom: 0;
 }
 
 
 
 
 
+
+
+
+@media only screen and (min-width: 1024px) {
+	
+	nav {
+		text-align: right;
+		margin-top: .9em;
+	}
+	
+	#bg-dk-grn .col-lg-6 {
+		margin-bottom: 0;
+	}
+	
+	#features, #works {
+		padding: 8em 0;
+	}
+	
+	#meet-brandi p:first-child {
+	font-size: 4rem;
+	margin-bottom: 0;
+	}
+
+	#meet-brandi p:nth-child(2) {
+	font-size: 1.4rem;
+	margin-top: 0;
+	}
+	
+	#hero p:last-child {
+		font-size: 1.5rem;
+	}
+	
+	#logo {
+		text-align: left;
+	}
+	
+	#logo p, #features p, footer p {
+	font-size: .8rem;
+}
+	
+	#features .col-md-3:nth-child(2) {
+		margin-left: 8em;
+	}
+	
+	#features .col-md-3:last-child {
+		float: right;
+	}
+	
+	#works p {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	
+	nav {
+		text-align: right;
+	}
+	
+	#bg-dk-grn .col-lg-6 {
+		margin-bottom: 0;
+	}
+	
+	#features, #works {
+		padding: 7em 0;
+	}
+	
+	#hero {
+		padding: 14em 0 8em;
+	}
+	
+	#hero p:first-child {
+	font-size: 3rem;
+	margin-bottom: 0;
+	}
+
+	#hero p:nth-child(2) {
+	font-size: 1.75rem;
+	margin-top: 0;
+	}
+	
+	#hero p:last-child {
+		font-size: 1.0rem;
+	}
+	
+	#logo {
+		text-align: left;
+	}
+	
+	#logo p, #features p, footer p {
+	font-size: .8rem;
+	}
+	
+	#features .col-md-3:nth-child(2) {
+		margin-left: 6em;
+	}
+	
+	#features .col-md-3:last-child {
+		float: right;
+	}
+	
+	
+}
+
+
+
+nav li {
+	display: inline-block;
+}
 
 
 
@@ -181,7 +226,11 @@ h1, h4, footer p {
 
 #bg-green {
         background-color: #104f41;
-        padding-bottom: 10em;
+        padding-bottom: 1em;
+}
+
+#works {
+	padding: 5rem 0 5rem 0;
 }
 
 
@@ -208,9 +257,8 @@ footer {
 a {
 	font-size: .9rem;
 	font-weight: 400;
-	margin-left: em;
-        text-decoration: none;
-        color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
